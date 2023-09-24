@@ -1,0 +1,23 @@
+
+    <div class="main">
+            <img src="{{TravelingData.image}}" alt="">
+        <div class="sub-main">
+            <p>{{TravelingData.name}}</p>
+            <p>⭐{{TravelingData.rating}}</p>
+            <p>{{TravelingData.description}}</p>
+            <p>{{TravelingData.location}}</p>
+            <p>{{TravelingData.activities}}</p>
+            <div class="buttons">
+                <button (click)="delete()" mat-icon-button color="warn" aria-label="Example icon button with a home icon">
+                <mat-icon>delete</mat-icon>
+                </button>   
+                <button (click)="onEdit()" mat-icon-button color="warn" aria-label="Example icon button with a home icon">
+                <mat-icon>edit</mat-icon>
+                </button>           
+            </div>
+            <div class="seeMore">
+                <button>See More</button>
+            </div>
+        </div>
+    </div>
+

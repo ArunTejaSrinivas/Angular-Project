@@ -1,0 +1,46 @@
+.example-form {
+    max-width: 20rem;
+
+  }
+  .imgcontain{
+    width: 48%;
+
+  }
+  .example-full-width {
+    width: 100%;
+  }
+
+  img{
+    height: 80%;
+     width: 100%; object-fit: contain;
+  }
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-height: 100%;
+  }
+
+  .formcontainer{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 43rem;
+    width: 30rem;
+    border-radius: 2rem;
+  }
+
+  .subform{
+  margin-left: 5rem;
+  margin-top: 2rem;
+  }
+
+  h1{
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: sans-serif;
+  }
+
+ 

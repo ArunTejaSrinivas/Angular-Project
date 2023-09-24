@@ -1,0 +1,56 @@
+<body>
+  <div class="container">
+    <div class="imgcontain">
+      <img
+        src="https://img.freepik.com/premium-vector/female-character-sits-packed-suitcases-woman-is-planning-summer-vacation-route-map-tourist-with-backpack-is-ready-go-journey-online-application-choosing-optimal-tour_776652-2240.jpg?w=2000"
+        alt=""
+      />
+    </div>
+  
+      <div class="formcontainer">
+        <div class="subform">
+          <form [formGroup]="formData" class="example-form" (ngSubmit)="onSubmit()">
+            <h1>Travel Form</h1>
+    
+            <mat-form-field class="example-full-width">
+              <mat-label>Name</mat-label>
+              <input matInput placeholder="Ex. ABCD" formControlName="name"/>
+            </mat-form-field>
+    
+            <mat-form-field class="example-full-width">
+              <mat-label>Rating</mat-label>
+              <input matInput placeholder="Ex. 1 to 10" formControlName="rating"/>
+            </mat-form-field>
+    
+            <mat-form-field class="example-full-width">
+              <mat-label>Image URL</mat-label>
+              <input matInput placeholder="Ex. http://img.com" formControlName="image" />
+            </mat-form-field>
+    
+            <mat-form-field class="example-full-width">
+              <mat-label>Description</mat-label>
+              <input matInput placeholder="Ex. Summary" formControlName="description" />
+            </mat-form-field>
+    
+            <mat-form-field class="example-full-width">
+              <mat-label>Location</mat-label>
+              <input matInput placeholder="Ex. Place Name" formControlName="location" />
+            </mat-form-field>
+    
+            <mat-form-field class="example-full-width">
+              <mat-label>Video URL</mat-label>
+              <input matInput placeholder="Ex. https/: ..." formControlName="video"/>
+            </mat-form-field>
+    
+            <mat-form-field class="example-full-width">
+              <mat-label>Activities</mat-label>
+              <input matInput placeholder="Ex. Observation Deck Visit, Picnicking"/>
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="submit">+ Add Place </button>
+            <div>
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+</body>

@@ -1,0 +1,4 @@
+<p>tourism works!</p>
+<div class="container">
+    <app-travel-places *ngFor="let tourism of tourismData" [TravelingData] = "tourism" (reloadData)="onlodedata()"></app-travel-places>
+</div>
