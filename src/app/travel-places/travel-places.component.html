@@ -1,23 +1,65 @@
-
+<!-- 
     <div class="main">
-            <img src="{{TravelingData.image}}" alt="">
-        <div class="sub-main">
-            <p>{{TravelingData.name}}</p>
-            <p>⭐{{TravelingData.rating}}</p>
+            <div class="myDIV">
+                <img src="{{TravelingData.image}}" alt="">
+            </div>
+            <div class="hide">
+                <div class="sub-main">
+                    <p>{{TravelingData.name}}</p>
+        
+                    <button mat-icon-button color="primary" (click)="onClick()" aria-label="Example icon button with a home icon" *ngIf="Toggle">
+                    <mat-icon>expand_more</mat-icon>
+                    </button>
+                    <button mat-icon-button color="primary" (click)="onClick()" aria-label="Example icon button with a home icon" *ngIf="!Toggle">
+                    <mat-icon>expand_less</mat-icon>
+                    </button>
+                    <p *ngIf="Toggle" >{{TravelingData.description}}</p>
+                    <p>⭐{{TravelingData.rating}}</p>
+                    <p>{{TravelingData.location}}</p>
+                    <p>{{TravelingData.activities}}</p>
+                    <div class="buttons">
+                        <button (click)="delete()" mat-icon-button color="warn" aria-label="Example icon button with a home icon">
+                        <mat-icon>delete</mat-icon>
+                        </button>   
+                        <button (click)="onEdit()" mat-icon-button color="warn" aria-label="Example icon button with a home icon">
+                        <mat-icon>edit</mat-icon>
+                        </button>           
+                    </div>
+                    <div class="seeMore">
+                        <a href=""><button>See More</button></a>
+                    </div>
+                </div>
+            </div>
+    </div> -->
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+
+    <div class="ui-card">
+        <img src="{{TravelingData.image}}">
+        <p *ngIf="TravelingData.visited" class="visited-badge">Visited</p>
+        <div class="description">
+            <h3>{{TravelingData.name}}</h3>
             <p>{{TravelingData.description}}</p>
-            <p>{{TravelingData.location}}</p>
-            <p>{{TravelingData.activities}}</p>
-            <div class="buttons">
-                <button (click)="delete()" mat-icon-button color="warn" aria-label="Example icon button with a home icon">
+            <!-- <a href="#">
+              <button (click)="Describe()">Read More</button>
+            </a>  -->
+            <button class="seemoreButton" (click)="Describe()" mat-flat-button color="primary">See More</button>
+
+              <button (click)="delete()" class="example-button-container" mat-icon-button color="primary" aria-label="Example icon button with a home icon">
                 <mat-icon>delete</mat-icon>
-                </button>   
-                <button (click)="onEdit()" mat-icon-button color="warn" aria-label="Example icon button with a home icon">
+              </button>
+
+              <button (click)="onEdit()" class="example-button-container1" mat-icon-button color="primary" aria-label="Example icon button with a home icon">
                 <mat-icon>edit</mat-icon>
-                </button>           
-            </div>
-            <div class="seeMore">
-                <button>See More</button>
-            </div>
+              </button>
+
+              <button  class="example-button-container2" mat-icon-button (click)="toggleFavorite()" [color]="isFavorite ? 'warn' : 'white'"
+              aria-label="Example icon button with a home icon">
+                <mat-icon>favorite</mat-icon>
+              </button>
         </div>
     </div>
 

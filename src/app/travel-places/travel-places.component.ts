@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./travel-places.component.css']
 })
 export class TravelPlacesComponent {
+
+
   @Output() reloadData = new EventEmitter();
   @Input() TravelingData:Travel = {
   name:"",
@@ -18,11 +20,27 @@ export class TravelPlacesComponent {
   video:"",
   rating: 0,
   activities:"",
-  id:""
+  id:"",
+  visited:false,
+  favourite:false
 }
 
 constructor(private travelService: TravelService, private rout: Router){
   
+}
+
+Toggle = false;
+onClick(){
+  this.Toggle = !this.Toggle
+}
+
+
+isFavorite: boolean = false;
+toggleFavorite(){
+  this.isFavorite = !this.isFavorite;
+  this.travelService.favouriteId(this.TravelingData.id).subscribe((data)=>{
+    console.log(data);
+  })
 }
 
 delete(){
@@ -37,6 +55,13 @@ delete(){
 
 onEdit(){
 this.rout.navigate([`travelPlaces/edit/${this.TravelingData.id}`])
+}
+
+
+
+
+Describe(){
+  this.rout.navigate([`travelPlaces/travelDetails/${this.TravelingData.id}`])
 }
 
 }

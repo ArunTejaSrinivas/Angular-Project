@@ -1,0 +1,25 @@
+<!-- <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head> -->
+<div class="icon-background">
+  <h1>find your next tour!</h1>
+  <form [formGroup]="Searchingdata" class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Search Place</mat-label>
+      <mat-icon matPrefix>search</mat-icon>
+      <input
+        formControlName="search"
+        type="text"
+        matInput
+        placeholder="Ex. Goa"
+      />
+    </mat-form-field>
+  </form>
+  <div class="container">
+    <app-travel-places 
+      *ngFor="let tourism of tourismData"
+      [TravelingData]="tourism"
+      (reloadData)="onlodedata()"
+    ></app-travel-places>
+  </div>
+</div>

@@ -8,6 +8,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import { Router } from '@angular/router';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {YouTubePlayerModule} from '@angular/youtube-player';
 
 
 
@@ -19,6 +21,8 @@ import { TravelPlacesComponent } from './travel-places/travel-places.component';
 import { FormComponent } from './form/form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EditFormComponent } from './edit-form/edit-form.component';
+import { SearchComponent } from './search/search.component';
+import { TraveDetailsComponent } from './trave-details/trave-details.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,8 @@ import { EditFormComponent } from './edit-form/edit-form.component';
     TravelPlacesComponent,
     FormComponent,
     EditFormComponent,
+    SearchComponent,
+    TraveDetailsComponent,
     
   ],
   imports: [
@@ -40,8 +46,8 @@ import { EditFormComponent } from './edit-form/edit-form.component';
     MatInputModule,
     MatFormFieldModule,   
     MatButtonModule,
-    
-
+    MatSlideToggleModule,
+    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,6 +10,8 @@ export interface Travel{
   rating:number;
   activities:string;
   id:string;
+  visited:boolean;
+  favourite:boolean;
 }
 
 @Component({

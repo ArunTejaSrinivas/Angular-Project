@@ -26,7 +26,7 @@
   .formcontainer{
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    height: 43rem;
+    height: 45rem;
     width: 30rem;
     border-radius: 2rem;
   }
@@ -50,4 +50,7 @@
     font-family: sans-serif;
   }
 
+  .toggle{
+    margin-bottom: 1rem;
+  }
  

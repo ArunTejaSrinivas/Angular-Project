@@ -1,0 +1,38 @@
+h1{
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: roboto;
+    color: yellow;
+    margin: 0 auto;
+    /* transform: translateY(13rem); */
+  }
+ 
+.icon-background .example-form {
+    min-width: 450px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    transform: translateY(1rem);
+  }
+  
+  .icon-background .example-full-width {
+    width: 100%;
+  }
+
+  .icon-background{
+    margin: 0;
+    display: grid;
+    min-height: 40vh;
+    place-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    align-items: center;
+    /* background-image: url("https://discovertemplate.com/wp-content/uploads/2021/12/travel-min.jpeg"); */
+  }
+  
+
+  .container{
+    margin-left: 3rem;
+    display: flex;
+  }

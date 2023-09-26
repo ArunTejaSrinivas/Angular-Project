@@ -14,6 +14,10 @@ export class TravelService {
     return this.http.get<Travel[]>("https://64f6f42a9d7754084952d8c3.mockapi.io/data");
   }
 
+  getDetailsbyid(id:string){
+    return this.http.get<Travel[]>(`https://64f6f42a9d7754084952d8c3.mockapi.io/data/${id}`);
+  }
+
 
   deleteTravelById(id: string){
     return this.http.delete(`https://64f6f42a9d7754084952d8c3.mockapi.io/data/${id}`);
@@ -30,6 +34,17 @@ export class TravelService {
 
   editTravalDataById(id:string, editTravel:Travel ){
     return this.http.put(`https://64f6f42a9d7754084952d8c3.mockapi.io/data/${id}`, editTravel)
+  }
+
+
+  searchTravelCard(name: string) {
+    return this.http.get<Travel[]>(
+      `https://64f6f42a9d7754084952d8c3.mockapi.io/data?name=${name}`
+    );
+  }
+
+  favouriteId(id:string){
+    return this.http.get<Travel[]>(`https://64f6f42a9d7754084952d8c3.mockapi.io/data/${id}`);
   }
 
 }

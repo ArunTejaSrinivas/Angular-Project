@@ -1,4 +1,4 @@
-<body>
+
     <p>edit-form works!</p>
 <div class="container">
     <div class="imgcontain">
@@ -11,12 +11,14 @@
       <div class="formcontainer">
         <div class="subform">
             <form [formGroup]="editForm" class="example-form" (ngSubmit)="edit()">
-                <h1>Travel Form</h1>
+                <h1>Edit Travel Form</h1>
         
                 <mat-form-field class="example-full-width">
                   <mat-label>Name</mat-label>
                   <input matInput placeholder="Ex. ABCD" formControlName="name"/>
                 </mat-form-field>
+
+                <mat-slide-toggle class="toggle" formControlName="visited">Visited</mat-slide-toggle>
         
                 <mat-form-field class="example-full-width">
                   <mat-label>Rating</mat-label>
@@ -54,5 +56,4 @@
         </div>
       </div>
   </div>
-</body>
   

@@ -23,7 +23,8 @@ export class EditFormComponent {
     description:"",
     location:"",
     video:"",
-    activities: ""
+    activities: "",
+    visited: false
   })
 
   ngOnInit(){

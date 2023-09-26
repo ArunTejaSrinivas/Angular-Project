@@ -1,5 +1,21 @@
 nav{
     display: flex;
     gap: 1rem;
-    
+    padding: .5rem;
+    justify-content: flex-end;
+    margin-right: 2rem;
+}
+
+.navigation{
+    background-color:#4cb320;
+    height: 3.5rem;
+}
+
+a{
+    text-decoration: none;
+    padding: .7rem;
+    color:white;
+    font-size: 1rem;
+    font-weight: 595;
+
 }

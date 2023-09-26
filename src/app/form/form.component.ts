@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { TravelService } from '../travel.service';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
 
 
 @Component({
@@ -17,21 +19,36 @@ export class FormComponent {
   }
 
   formData =  this.fb.group({
-    name:"",
+    name:['', [Validators.required, Validators.minLength(3)]],
     rating: 0,
-    image:"",
+    image:['', [Validators.required, Validators.minLength(5), Validators.pattern('^http.*')]],
     description:"",
-    location:"",
+    location:['', [Validators.required, Validators.minLength(3)]],
     video:"",
-    activities: ""
+    activities: "",
+    visited: false
   })
 
   onSubmit(){
+    if (this.formData.valid) {
     this.formDetails = this.formData.value;
     this.travelservice.newTravelRecord(this.formDetails).subscribe(()=> {
       this.rout.navigate(['/travelPlaces'])
     })
+  }
   } 
 
+
+  get name() {
+    return this.formData?.get('name');
+  }
+
+  get image() {
+    return this.formData?.get('image');
+  }
+
+  get location() {
+    return this.formData?.get('location');
+  }
 
 }

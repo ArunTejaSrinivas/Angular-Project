@@ -1,0 +1,40 @@
+.imageStyling img{
+    height: 30rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    object-fit: cover;
+    place-content: center;
+    margin-top: 1rem;
+}
+
+.imageStyling h1{
+    font-weight: bold;
+    font-size: 4rem;
+    transform: translateY(-16rem);
+    margin-left: 32rem;
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.textcontainer1{
+    border-right: 0.25rem solid green;
+    width: 25rem;
+    height: 15rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 10rem 20rem;
+}
+
+.innerContainer{
+    display: flex;
+    align-items: stretch;
+}
+
+.outerContainer{
+    display: flex;
+}
