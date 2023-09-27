@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Travel } from '../app.component';
 import { TravelService } from '../travel.service';
 import { FormBuilder } from '@angular/forms';
-import { debounceTime, distinctUntilChanged, switchMap, Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-tourism',
@@ -16,12 +16,6 @@ export class TourismComponent {
   constructor(private TS: TravelService, private fb: FormBuilder){
 
   }
-   
-  // ngOnInit(){
-  //   this.onlodedata();
-
-  // }
-  
   
   onlodedata() {
     this.TS.getPosts().subscribe((response) => {
@@ -32,15 +26,6 @@ export class TourismComponent {
   ngOnInit() {
   this.onlodedata();
 }
-  // // setTravel(){
-  //   this.TS.getPosts().subscribe((response) => {
-  //     this.tourismData = response;
-  //   })
-  // }
-
-  // ngOnDestroy() {
-  //   this.getTravelList.unsubscribe();
-  // }
 
 }
 

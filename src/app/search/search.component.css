@@ -1,10 +1,9 @@
 h1{
     font-size: 2rem;
     font-weight: 800;
-    font-family: roboto;
+    font-family: sans-serif;
     color: #4a34a3;
     margin: 0 auto;
-    /* transform: translateY(13rem); */
   }
  
 .icon-background .example-form {
@@ -31,7 +30,6 @@ h1{
     margin-left: 5rem;
   }
   
-
   .container{
     margin-left: 3rem;
     display: flex;
