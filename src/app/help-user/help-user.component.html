@@ -1,0 +1,64 @@
+<p>help-user works!</p>
+<div class="main">
+  <div class="home">
+    
+    <a [routerLink]="['']" [queryParams]="{debug: true}" fragment="home">
+        <h1>HOME</h1>
+      </a>
+    <p>
+      <em>
+        This page is going to help you to find/Search relevant information
+        quickly and efficiently, By entering specific keywords or phrases, users
+        can receive a list of tourist places cards that match their search
+        query.
+      </em>
+    </p>
+  </div>
+
+  <div class="blog">
+    <a [routerLink]="['/travelPlaces']" [queryParams]="{debug: true}" fragment="blog">
+        <h1>BLOG</h1>
+      </a>
+
+    <p>
+      <em>
+        The purpose of a blog is going to help to show all type of tourist
+        places with some features called:<br />
+        >Delete Option<br />
+        >Update Option<br />
+        >See More Option<br />
+        >Like/Favourite Option<br />
+        >and Tag called Visited/not Visited
+      </em>
+    </p>
+  </div>
+
+  <div class="addform">
+    <a [routerLink]="['/travelPlaces/edit/:id']" [queryParams]="{debug: true}" fragment="home">
+        <h1>ADD FORM</h1>
+      </a>
+
+    <p>
+      <em>
+        The AddForm function gives you so much flexibility to add/creat your own
+      tourist Place. what are all the details you filled it is going to creat
+      new travel card that you can see in blog page where list of available
+      tourist places present.
+      </em>
+    </p>
+  </div>
+
+  <div class="favourites">
+    <a [routerLink]="['/favourites']" [queryParams]="{debug: true}" fragment="home">
+        <h1>FAVOURITES</h1>
+      </a>
+
+    <p>
+      <em>
+        While "favorites" may refer to a wide variety of items, the purpose of a
+      favorites page is always to provide easy access to frequently used items
+      or for future reference to visit the place.
+      </em>
+    </p>
+  </div>
+</div>

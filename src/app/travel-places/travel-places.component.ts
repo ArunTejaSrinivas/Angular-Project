@@ -2,10 +2,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Travel } from '../app.component';
 import { TravelService } from '../travel.service';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-travel-places',
-  templateUrl: './travel-places.component.html',
+  templateUrl:'./travel-places.component.html',
   styleUrls: ['./travel-places.component.css']
 })
 export class TravelPlacesComponent {
@@ -29,19 +30,19 @@ constructor(private travelService: TravelService, private rout: Router){
   
 }
 
-Toggle = false;
-onClick(){
-  this.Toggle = !this.Toggle
-}
 
-
-isFavorite: boolean = false;
-toggleFavorite(){
+isFavorite= this.TravelingData.favourite;
+ toggleFavorite(){
   this.isFavorite = !this.isFavorite;
-  this.travelService.favouriteId(this.TravelingData.id).subscribe((data)=>{
-    console.log(data);
+  console.log(this.isFavorite);
+    this.TravelingData.favourite = this.isFavorite;
+   this.travelService.favouriteId(this.TravelingData.id, this.TravelingData).subscribe((data)=>{
+   console.log(data);
+  this.travelService.favouriteIdWishlist(data)
   })
 }
+
+
 
 delete(){
   if(confirm("Are you sure you want to delete the travel record")){
@@ -56,8 +57,6 @@ delete(){
 onEdit(){
 this.rout.navigate([`travelPlaces/edit/${this.TravelingData.id}`])
 }
-
-
 
 
 Describe(){

@@ -1,28 +1,26 @@
 .imageStyling img{
-    height: 30rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    height: 30rem;
     object-fit: cover;
-    place-content: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    object-position: left;
 }
 
 .imageStyling h1{
     font-weight: bold;
-    font-size: 4rem;
-    transform: translateY(-16rem);
-    margin-left: 32rem;
-    color: whitesmoke;
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 3rem;
+    color: rgb(255, 239, 239);
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .textcontainer1{
     border-right: 0.25rem solid green;
-    width: 25rem;
-    height: 15rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -30,11 +28,31 @@
     margin: 2rem 10rem 20rem;
 }
 
-.innerContainer{
+.flextingthedata{
     display: flex;
-    align-items: stretch;
+    margin-top: 3rem;
+    place-content: center;
+    gap: 2rem;
 }
 
-.outerContainer{
+.innerdata1{
+    border-right: 0.30rem solid green;
+    height: 15rem;
+    padding: 3rem;
+
+}
+
+.icons1, .icons2, .icons3, .icons4, .icons5{
     display: flex;
+    gap: 1rem;
+    align-items: stretch;
+    margin-bottom: 1rem;
+}
+
+.video1{
+    margin-top: 2rem;
+}
+
+.icons2 p{
+    color: rgb(180, 178, 178);
 }

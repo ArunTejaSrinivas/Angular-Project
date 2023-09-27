@@ -2,7 +2,7 @@ h1{
     font-size: 2rem;
     font-weight: 800;
     font-family: roboto;
-    color: yellow;
+    color: #4a34a3;
     margin: 0 auto;
     /* transform: translateY(13rem); */
   }
@@ -28,11 +28,21 @@ h1{
     background-size: cover;
     background-position: top;
     align-items: center;
-    /* background-image: url("https://discovertemplate.com/wp-content/uploads/2021/12/travel-min.jpeg"); */
+    margin-left: 5rem;
   }
   
 
   .container{
     margin-left: 3rem;
     display: flex;
+    flex-wrap: wrap;
+    margin-left: 10rem;
+  }
+
+  body{
+    background-image: url("https://img.freepik.com/premium-vector/man-traveler-walking-city-carry-suitcase_80802-371.jpg?size=626&ext=jpg&ga=GA1.1.148687861.1695457790&semt=ais");
+    background-repeat: no-repeat;
+    align-items: center;
+    background-size: contain;
+    
   }

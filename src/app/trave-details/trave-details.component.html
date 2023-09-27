@@ -1,22 +1,74 @@
 <div>
-  <div class="imageStyling">
-    <img src="{{ TravelingData.image }}" alt="" />
-    <h1>{{ TravelingData.name }}</h1>
-  </div>
-  <div class="textcontainer">
-    <!-- <h1>{{TravelingData.description}}</h1> -->
-  </div>
-  <div class="outerContainer">
-        <div class="textcontainer1">
-        <div class="innerContainer">
-            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="room"></mat-icon>
-            <p>{{ TravelingData.location }}</p>
+    <div class="imageStyling">
+      <img src="{{ TravelingData.image }}" alt="" />
+      <h1>{{ TravelingData.name }}</h1>
+    </div>
+    <div class="flextingthedata">
+      <div class="innerdata1">
+
+        <div class="icons1">
+          <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="location_on">
+          </mat-icon>
+          <p>{{ TravelingData.location }}</p>
         </div>
-        <p>{{ TravelingData.description }}</p>
+
+        <div class="icons3">
+          <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="mode_of_travel">
+          </mat-icon>
+        </div>
+
+       <div class="icons4">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="hotel">
+        </mat-icon>
+       </div>
+
+       <div class="icons5">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="explore">
+        </mat-icon>
         <p>{{ TravelingData.activities }}</p>
-        </div>
-        <div>
-            <iframe width="500" height="300" [src]=TravelingData.video title="Visitez la Tour Eiffel en réalité virtuelle à 360°" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-  </div>
+       </div>
+       
+       <div class="icons2">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="description">
+        </mat-icon>
+        <p>{{ TravelingData.description }}</p>
+      </div>
+      </div>
+      <div class="video1">
+        <iframe
+        width="500"
+        height="300"
+        [src]="TravelingData.video"
+        title="Visitez la Tour Eiffel en réalité virtuelle à 360°"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      </div>
+    </div>
+  <!-- <div class="outerContainer">
+    <div class="textcontainer1">
+      <div class="innerContainer">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          fontIcon="room"
+        ></mat-icon>
+        <p>{{ TravelingData.location }}</p>
+      </div>
+      <p>{{ TravelingData.description }}</p>
+      <p>{{ TravelingData.activities }}</p>
+    </div>
+    <div>
+      <iframe
+        width="500"
+        height="300"
+        [src]="TravelingData.video"
+        title="Visitez la Tour Eiffel en réalité virtuelle à 360°"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div> -->
 </div>

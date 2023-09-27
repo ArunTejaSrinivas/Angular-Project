@@ -1,0 +1,18 @@
+.home, .blog, .addform, .favourites{
+    border: .3rem solid green;
+    text-align: center;
+    margin: auto;
+    width: 500px; 
+    padding: 50px;
+    font-family: 'Lexend Deca', sans-serif; 
+    color: #2E475D;  
+    margin-bottom: 3rem;
+}
+
+.main h1{
+    text-decoration: underline;
+}
+
+a{
+    color: #2E475D; 
+}

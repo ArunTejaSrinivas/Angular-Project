@@ -23,6 +23,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EditFormComponent } from './edit-form/edit-form.component';
 import { SearchComponent } from './search/search.component';
 import { TraveDetailsComponent } from './trave-details/trave-details.component';
+import { FavouritesComponent } from './favourites/favourites.component';
+import { HelpUserComponent } from './help-user/help-user.component';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +36,8 @@ import { TraveDetailsComponent } from './trave-details/trave-details.component';
     EditFormComponent,
     SearchComponent,
     TraveDetailsComponent,
-    
+    FavouritesComponent,
+    HelpUserComponent,    
   ],
   imports: [
     BrowserModule,
