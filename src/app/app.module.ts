@@ -37,7 +37,7 @@ import { HelpUserComponent } from './help-user/help-user.component';
     SearchComponent,
     TraveDetailsComponent,
     FavouritesComponent,
-    HelpUserComponent,    
+    HelpUserComponent,  
   ],
   imports: [
     BrowserModule,

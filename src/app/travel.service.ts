@@ -53,4 +53,8 @@ export class TravelService {
   favouriteIdlist(){
     return this.http.get(`https://64f6f42a9d7754084952d8c3.mockapi.io/data?favourite=true`);
   }
+
+  // favouriteIdlistDelete(){
+  //   return this.http.get(`https://64f6f42a9d7754084952d8c3.mockapi.io/data?favourite=false`);
+  // }
 }

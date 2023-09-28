@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Travel } from '../app.component';
 import { TravelService } from '../travel.service';
 import { FormBuilder } from '@angular/forms';
@@ -10,8 +10,8 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./tourism.component.css']
 })
 export class TourismComponent {
-  tourismData:Travel[] = []
-  getTravelList: Subscription | any;
+ tourismData:Travel[] = []
+
 
   constructor(private TS: TravelService, private fb: FormBuilder){
 

@@ -15,13 +15,21 @@ export class FavouritesComponent {
     
   }
 
+
 ngOnInit(){
   this.favouriteData.favouriteIdlist().subscribe((data)=>{
     this.tourismData=data
   })
+  // this.favouriteData.favouriteIdlist()
+//  this.onlodedata()
 }
 
 
+// onlodedata() {
+//   this.favouriteData.favouriteIdlist().subscribe((response) => {
+//     this.tourismData = response;
+//   });
 
+// }
 
 }

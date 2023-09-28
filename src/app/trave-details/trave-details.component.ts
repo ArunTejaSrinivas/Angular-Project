@@ -13,17 +13,14 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class TraveDetailsComponent {
   Id:string;
   video!:SafeResourceUrl;
-   TravelingData:any=[] 
+  TravelingData:any=[] 
 
 
    
   constructor(private travelDetails:TravelService ,private ActRout:ActivatedRoute,private sanitizer:DomSanitizer){
     const {id} =  this.ActRout.snapshot.params
-   
-
     this.Id = id;
     this.getTravel()
-
   }
   
   getTravel() {
@@ -31,8 +28,8 @@ export class TraveDetailsComponent {
       this.TravelingData = {...data,
       video:this.sanitizer.bypassSecurityTrustResourceUrl(data.video)
       }
-      console.log(this.video)
-  console.log(this.TravelingData)
+  //     console.log(this.video)
+  // console.log(this.TravelingData)
   
     });
   }

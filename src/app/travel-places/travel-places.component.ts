@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Travel } from '../app.component';
 import { TravelService } from '../travel.service';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-travel-places',
@@ -38,7 +38,6 @@ isFavorite= this.TravelingData.favourite;
     this.TravelingData.favourite = this.isFavorite;
    this.travelService.favouriteId(this.TravelingData.id, this.TravelingData).subscribe((data)=>{
    console.log(data);
-  this.travelService.favouriteIdWishlist(data)
   })
 }
 
@@ -47,7 +46,6 @@ isFavorite= this.TravelingData.favourite;
 delete(){
   if(confirm("Are you sure you want to delete the travel record")){
     this.travelService.deleteTravelById(this.TravelingData.id).subscribe(() => {
-      console.log("deleted")
       this.reloadData.emit()
     })
   }
