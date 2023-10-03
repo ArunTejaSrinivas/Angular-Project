@@ -25,6 +25,7 @@ import { SearchComponent } from './search/search.component';
 import { TraveDetailsComponent } from './trave-details/trave-details.component';
 import { FavouritesComponent } from './favourites/favourites.component';
 import { HelpUserComponent } from './help-user/help-user.component';
+import { CreateProfileComponent } from './create-profile/create-profile.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { HelpUserComponent } from './help-user/help-user.component';
     SearchComponent,
     TraveDetailsComponent,
     FavouritesComponent,
-    HelpUserComponent,  
+    HelpUserComponent,
+    CreateProfileComponent,  
   ],
   imports: [
     BrowserModule,

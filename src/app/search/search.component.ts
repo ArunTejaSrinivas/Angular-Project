@@ -45,7 +45,16 @@ export class SearchComponent {
     return this.Searchingdata.get('search');
   }
 
-  ngOnInit() {
+  // this.search?.valueChanges
+  // .pipe(
+  //   debounceTime(1500),
+  //   distinctUntilChanged(),
+  //   switchMap((name) => name ? this.TS.searchTravelCard(name || '') : of([]))
+  // )
+  // .subscribe((mvList) => {
+  //   this.tourismData = mvList;
+  // });
+displaySearch(){
   this.search?.valueChanges
   .pipe(
     debounceTime(1500),
@@ -55,6 +64,10 @@ export class SearchComponent {
   .subscribe((mvList) => {
     this.tourismData = mvList;
   });
+}
+
+  ngOnInit() {
+    this.displaySearch()
 // this.onlodedata();
 }
 }

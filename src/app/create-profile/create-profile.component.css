@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(145, 216, 222);
+    display: flex;
+    justify-content: center;
+   
+}
+
+.editselect{
+    height: 2rem;
+    width: 10rem;
+    margin: 2rem;
+    border-radius: .5rem;
+}
+
+.inputSearch input{
+    height: 2.2rem;
+    width: 18rem;
+    border-radius: .5rem;
+    border: none;
+}
+
+
+.inputSearch{
+position: absolute;
+margin-top: 5rem;
+margin-left: 1rem;
+
+
+}
+
+
+.icons{
+position: relative;
+right: 30px;
+top: 8px;
+
+}
+
+.backgroundcoloring{
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-right: 1.2rem;
+}

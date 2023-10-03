@@ -7,6 +7,7 @@ import { SearchComponent } from './search/search.component';
 import { TraveDetailsComponent } from './trave-details/trave-details.component';
 import { FavouritesComponent } from './favourites/favourites.component';
 import { HelpUserComponent } from './help-user/help-user.component';
+import { CreateProfileComponent } from './create-profile/create-profile.component';
 
 const routes: Routes = [
   { path: 'travelPlaces', component: TourismComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'travelPlaces/travelDetails/:id', component: TraveDetailsComponent },
   { path: 'favourites', component: FavouritesComponent},
   { path: 'helpUser', component: HelpUserComponent},
+  { path: 'profile', component: CreateProfileComponent},
 ];
 
 @NgModule({
