@@ -25,7 +25,6 @@ import { SearchComponent } from './search/search.component';
 import { TraveDetailsComponent } from './trave-details/trave-details.component';
 import { FavouritesComponent } from './favourites/favourites.component';
 import { HelpUserComponent } from './help-user/help-user.component';
-import { CreateProfileComponent } from './create-profile/create-profile.component';
 
 
 @NgModule({
@@ -39,7 +38,6 @@ import { CreateProfileComponent } from './create-profile/create-profile.componen
     TraveDetailsComponent,
     FavouritesComponent,
     HelpUserComponent,
-    CreateProfileComponent,  
   ],
   imports: [
     BrowserModule,
@@ -53,7 +51,7 @@ import { CreateProfileComponent } from './create-profile/create-profile.componen
     MatFormFieldModule,   
     MatButtonModule,
     MatSlideToggleModule,
-    YouTubePlayerModule
+    YouTubePlayerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
