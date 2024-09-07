@@ -7,7 +7,6 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
-import { Router } from '@angular/router';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {YouTubePlayerModule} from '@angular/youtube-player';
 

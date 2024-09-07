@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { environment } from '../app/config';
 
 
 export interface Travel{
@@ -22,8 +21,4 @@ export interface Travel{
 })
 export class AppComponent {
   title = 'Project';
-  apiUrl: string = environment.DOMAIN;
-  constructor() {
-    console.log('API URL:', this.apiUrl);
-  }
 }
